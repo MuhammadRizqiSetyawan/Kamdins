@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="backgroundImage" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1980.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="playButton" layoutX="693.0" layoutY="579.0" mnemonicParsing="false" styleClass="button-without-background" stylesheets="@styles.css" onAction="#handlePlayButtonAction">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/play-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="911.0" layoutY="579.0" mnemonicParsing="false" styleClass="button-without-background" stylesheets="@styles.css" onAction="#handleInfoButtonAction">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/info.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="exitButton" layoutX="1090.0" layoutY="541.0" mnemonicParsing="false" prefHeight="213.0" prefWidth="220.0" styleClass="button-without-background" stylesheets="@styles.css" onAction="#handleExitButtonAction">
+               <graphic>
+                  <ImageView fitHeight="225.0" fitWidth="231.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/power-switch.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="491.0" fitWidth="421.0" layoutX="792.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Group%205%20(4).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

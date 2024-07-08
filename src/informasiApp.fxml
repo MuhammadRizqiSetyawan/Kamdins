@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="backgroundImage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1080.0" minWidth="1980.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InformasiAppController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="1890.0" layoutY="24.0" onAction="#handleBackButtonAction" prefHeight="22.0" prefWidth="30.0" styleClass="button-without-background" stylesheets="@styles.css">
+               <graphic>
+                   <ImageView fitHeight="83.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@images/left.png" />
+                      </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="643.0" prefHeight="1080.0" prefWidth="870.0" styleClass="customScrollPane" stylesheets="@styles.css">
+               <content>
+                  <Text styleClass="customText" text="&#10;A Soft Murmur is an online background noise generator designed to help you relax, focus, and tune out unpleasant sounds from your environment.&#10;&#10;Background noise can be distracting, or it can be calming, it all depends on the type of sound. The regular whirr of a fan, the gentle patter of rain against the window or the constant buzz of a white noise machine are sounds that many people find relaxing. Even the distant rumble of thunder can be soothing when you’re comfortable and safe indoors.&#10;&#10;But other types of noise can be distracting, irritating or even stressful -- the hammering from the building site across the street, the stomping of the neighbors in the apartment upstairs, or the thumping bass from the party outside.&#10;&#10;A Soft Murmur is designed to help you ignore bothersome noise by playing custom ambient sounds to suit your environment.&#10;&#10;If you’re trying to study in the library and someone won’t stop talking, try listening to the Coffee Shop sound to transform a single, distracting voice into a pleasant background murmur. If music coming through the wall is keeping you up, try a mix of Singing Bowl with Waves or Wind to help you ignore it. To disguise high-pitched sounds, Birds and Crickets are a good option, and for low-pitched sounds, try Thunder.&#10;&#10;If you’re trying to fall asleep, you might find the timer function handy. You can set sounds to stop playing after a certain period of time, or if you prefer you can have them fade out gradually to silence.&#10;&#10;If you want some more variety, try the Meander function (the button that looks like a squiggly line to the left of the play button). When Meander is active, any sound which isn’t silent will gently increase and decrease in volume in a random pattern, creating a soundscape which undulates and flows just like background sounds in real life.&#10;&#10;If you still find yourself distracted by unpleasant sounds even after using A Soft Murmur, there are a few more things you can try.&#10;&#10;One option is to combine ambient sounds with other types of audio, like some relaxing music. If you’re unsure what type of music to try, searching for “ambient music” on YouTube or Spotify is a good place to start.&#10;&#10;Another option is to invest in a pair of noise-cancelling headphones. However, while noise cancellation technology tends to be pretty effective against steady, predictable noise sources, like the sound of travelling in a plane or train, it’s much less effective against more random, intermittent noise, like construction work or emergency sirens.&#10;&#10;Finally, when all else fails you can try a pair of earplugs. But again, these tend to work well for some frequencies of sounds and less well for others. In a previous apartment I lived above neighbours who liked to party til 6am all days of the week. I would sometimes wear earplugs, then put my over-ear noise-cancelling headphones on top playing ambient music and nature sounds. It’s amazing what the mind comes up with when you really, really need to sleep.&#10;&#10;I hope A Soft Murmur is enjoyable and useful for you. If you have any questions, comments or complaints, please send me a message at gabriel@asoftmurmur.com&#10;&#10;I hope you have a relaxing day!&#10;&#10;—Gabriel&#10;" wrappingWidth="760.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

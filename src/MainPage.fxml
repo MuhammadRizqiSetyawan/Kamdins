@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="backgroundImage" prefHeight="1080.0" prefWidth="1980.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPageController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="696.0" layoutY="286.0" onAction="#switchToDocumentPage" prefHeight="11.0" prefWidth="0.0" styleClass="button-without-background" stylesheets="@styles.css">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/left.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            
+            <!-- Sound Controls -->
+            <ImageView fx:id="forestSoundImage" fitHeight="140.0" fitWidth="140.0" layoutX="656.0" layoutY="448.0">
+               <image>
+                  <Image url="@images/forest%20(1).png" />
+               </image></ImageView>
+            <Slider fx:id="forestSoundSlider" layoutX="655.0" layoutY="604.0" styleClass="custom-slider" stylesheets="@styles.css" />
+
+            <ImageView fx:id="rainSoundImage" fitHeight="140.0" fitWidth="140.0" layoutX="919.0" layoutY="448.0">
+               <image>
+                  <Image url="@images/rain.png" />
+               </image></ImageView>
+            <Slider fx:id="rainSoundSlider" layoutX="920.0" layoutY="604.0" styleClass="custom-slider" stylesheets="@styles.css" />
+
+            <ImageView fx:id="windSoundImage" fitHeight="140.0" fitWidth="140.0" layoutX="1186.0" layoutY="448.0">
+               <image>
+                  <Image url="@images/traffic-jam.png" />
+               </image></ImageView>
+            <Slider fx:id="windSoundSlider" layoutX="1186.0" layoutY="604.0" styleClass="custom-slider" stylesheets="@styles.css" />
+
+            <Button layoutX="906.0" layoutY="232.0" onAction="#togglePlayStop" styleClass="button-without-background" stylesheets="@styles.css">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/pause.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="1210.0" layoutY="284.0" onAction="#resetSounds" styleClass="button-without-background" stylesheets="@styles.css">
+               <graphic>
+                  <ImageView fitHeight="84.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/trash.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="885.0" layoutY="183.0" onAction="#toggleMixTableVisibility" styleClass="button2" stylesheets="@styles.css" text="Mixes" />
+
+            <!-- Timer Controls Toggle Button -->
+            <Button layoutX="1013.0" layoutY="183.0" onAction="#toggleTimerVisibility" styleClass="button2" stylesheets="@styles.css" text="Timer" />
+
+            <!-- Timer Controls -->
+            <HBox fx:id="timerHBox" layoutX="663.0" layoutY="374.0" spacing="10" visible="false">
+                <TextField fx:id="hourField" promptText="HH" styleClass="custom-text-field" stylesheets="@styles.css" />
+                <TextField fx:id="minuteField" promptText="MM" styleClass="custom-text-field" stylesheets="@styles.css" />
+                <Button fx:id="startStopTimerButton" onAction="#startStopTimer" styleClass="button2" stylesheets="@styles.css" text="Start Timer" />
+                <Label fx:id="countdownLabel" styleClass="custom-timer-label" stylesheets="@styles.css" text="0h0m0s" />
+            </HBox>
+
+            <VBox fx:id="mixVBox" layoutX="689.0" layoutY="666.0" spacing="10" visible="false">
+               <HBox prefHeight="54.0" prefWidth="600.0" spacing="10">
+                  <children>
+                      <TextField fx:id="mixNameField" prefHeight="40.0" prefWidth="361.0" promptText="Enter mix name" styleClass="custom-text-field" stylesheets="@styles.css" />
+                      <Button onAction="#saveMix" styleClass="button2" stylesheets="@styles.css" text="Save Mix" />
+                      <Button alignment="TOP_RIGHT" onAction="#deleteMix" styleClass="button2" stylesheets="@styles.css" text="Delete Mix" />
+                  </children>
+               </HBox>
+                <TableView fx:id="mixTable" prefHeight="200.0" prefWidth="600.0" stylesheets="@styles.css">
+                   <columns>
+                      <TableColumn fx:id="mixNameColumn" prefWidth="200.0" text="Mix Name" />
+                      <TableColumn fx:id="forestVolumeColumn" prefWidth="100.0" text="Forest Volume" />
+                      <TableColumn fx:id="rainVolumeColumn" prefWidth="100.0" text="Rain Volume" />
+                      <TableColumn fx:id="windVolumeColumn" prefWidth="100.0" text="Wind Volume" />
+                   </columns>
+                  <styleClass>
+                     <String fx:value="custom-table-view" />
+                     <String fx:value="label-title" />
+                  </styleClass>
+                </TableView>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

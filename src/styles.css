@@ -1,0 +1,218 @@
+/* styles.css */
+.root {
+    -fx-background-color: #454444;
+}
+
+
+.label-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bolder;
+}
+
+.label-title1 {
+    -fx-font-size: 70px;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.label-title2 {
+    -fx-font-family: 'CustomFont';
+}
+
+.label-caption {
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center;
+}
+
+.text-field-search {
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #e5e4e8;
+    -fx-border-color: #b3bbc2;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.button-clear {
+    -fx-background-color: #b3bbc2;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+}
+
+.button-without-background {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.button-without-background:hover {
+    -fx-opacity: 0.8; /* Slightly transparent on hover */
+}
+
+.button-without-backgrounds:pressed {
+    -fx-opacity: 0.6; /* More transparent when pressed */
+}
+
+.list-view-results {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #b3bbc2;
+    -fx-border-width: 2px;
+}
+
+.background-color {
+    -fx-background-color: #ffffff;
+}
+
+.hbox-trending {
+    -fx-spacing: 10px;
+}
+
+/* styles.css */
+.button2 {
+    -fx-background-color: #333; /* Dark gray background for a calm effect */
+    -fx-text-fill: #fff; /* White text color for contrast */
+    -fx-border-color: #555; /* Slightly lighter gray border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 10px 20px; /* Padding for a comfortable clickable area */
+    -fx-font-size: 16px; /* Medium font size for readability */
+    -fx-font-family: 'Arial', sans-serif; /* Clean and modern font */
+    -fx-background-radius: 5px; /* Rounded corners for a softer look */
+    -fx-border-radius: 5px; /* Rounded corners for the border */
+    -fx-cursor: hand; /* Pointer cursor to indicate it's clickable */
+}
+
+.button2:hover {
+    -fx-background-color: #555; /* Slightly lighter background on hover */
+    -fx-border-color: #777; /* Slightly lighter border on hover */
+}
+
+.button2:pressed {
+    -fx-background-color: #222; /* Darker background when button is pressed */
+    -fx-border-color: #444; /* Darker border when button is pressed */
+}
+
+.custom-slider .track {
+    -fx-background-color: #ccc; /* Background color of the track */
+    -fx-background-radius: 10; /* Rounded corners for the track */
+    -fx-padding: 0.5em;
+}
+
+.custom-slider .thumb {
+    -fx-background-color: #333; /* Dark gray color for the thumb */
+    -fx-background-radius: 50%; /* Make the thumb round */
+    -fx-pref-width: 15px; /* Width of the thumb */
+    -fx-pref-height: 15px; /* Height of the thumb */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 10, 0, 0, 1); /* Add shadow for the thumb */
+}
+
+.custom-slider .thumb:hover {
+    -fx-background-color: #555; /* Slightly lighter thumb color on hover */
+}
+
+.custom-slider .thumb:pressed {
+    -fx-background-color: #111; /* Darker thumb color when pressed */
+}
+
+.custom-slider .track-fill {
+    -fx-background-color: #666; /* Fill color for the track */
+    -fx-background-radius: 10; /* Rounded corners for the fill */
+}
+
+/* styles.css */
+.custom-table-view {
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 5px;
+    -fx-background-color: #f9f9f9; /* Background color for the table */
+}
+
+.custom-table-view .column-header {
+    -fx-background-color: #e6dbdb; /* Dark background color for the header */
+    -fx-text-fill: white; /* White text color for the header */
+    -fx-font-size: 14px; /* Font size for the header */
+    -fx-font-weight: bold; /* Bold text for the header */
+    -fx-padding: 10px; /* Padding for the header cells */
+}
+
+.custom-table-view .table-row-cell {
+    -fx-background-color: #fff; /* White background for rows */
+    -fx-border-color: #ddd; /* Light gray border for rows */
+    -fx-border-width: 0 0 1px 0; /* Bottom border only */
+}
+
+.custom-table-view .table-row-cell:hover {
+    -fx-background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+.custom-table-view .table-row-cell:focused {
+    -fx-background-color: #e1e1e1; /* Slightly darker gray when row is focused */
+}
+
+.custom-table-view .table-cell {
+    -fx-padding: 10px; /* Padding for table cells */
+    -fx-border-color: transparent; /* No border for individual cells */
+    -fx-font-size: 12px; /* Font size for table cells */
+}
+
+/* styles.css */
+.custom-text-field {
+    -fx-background-color: #f9f9f9; /* Light gray background color */
+    -fx-border-color: #ccc; /* Light gray border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded corners for the border */
+    -fx-background-radius: 5px; /* Rounded corners for the background */
+    -fx-padding: 10px; /* Padding inside the text field */
+    -fx-font-size: 14px; /* Font size for the text */
+    -fx-font-family: 'Arial', sans-serif; /* Font family for the text */
+}
+
+.custom-text-field:focused {
+    -fx-border-color: #333; /* Darker border color when focused */
+    -fx-background-color: #fff; /* White background when focused */
+}
+
+.custom-text-field:hover {
+    -fx-border-color: #999; /* Slightly darker border color on hover */
+}
+
+.custom-text-field .text {
+    -fx-fill: #333; /* Text color */
+}
+
+.custom-text-field .prompt-text {
+    -fx-fill: #aaa; /* Prompt text color */
+}
+
+.custom-timer-label {
+    -fx-background-color: #333; /* Dark gray background color */
+    -fx-text-fill: #fff; /* White text color */
+    -fx-font-size: 24px; /* Large font size for timer */
+    -fx-font-family: 'Courier New', monospace; /* Monospace font for timer */
+    -fx-padding: 10px 20px; /* Padding around the label */
+    -fx-border-color: #555; /* Slightly lighter gray border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded corners for the border */
+    -fx-background-radius: 5px; /* Rounded corners for the background */
+    -fx-alignment: center; /* Center the text within the label */
+}
+
+.customScrollPane {
+    -fx-background-color: transparent; /* Warna latar belakang transparan */
+    -fx-background: transparent; /* Menghapus latar belakang default ScrollPane */
+}
+
+.customScrollPane .scroll-bar:horizontal, .customScrollPane .scroll-bar:vertical {
+    -fx-opacity: 0; /* Menyembunyikan scroll bar dengan mengatur opasitas menjadi 0 */
+}
+
+.customText {
+    -fx-font-size: 16px; /* Ukuran font */
+    -fx-fill: white; /* Warna teks */
+    -fx-background-color: rgba(0, 0, 0, 0.7); /* Latar belakang hitam dengan transparansi */
+    -fx-padding: 10; /* Padding di sekitar teks */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0); /* Efek bayangan untuk blur */
+}
+
